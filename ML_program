@@ -1,0 +1,17 @@
+collect_cpu
+	collect_cpu.py 收集客户端cpu信息
+	collect_cpu_server.py 收集服务器端cpu信息
+collect_gpu
+	collect_gpu.py 收集服务器端gpu信息
+	log_gpu.py  记录GPU 的情况，给Ying
+program
+		每秒迭代次数
+	mnist_cnn.py 
+	mnist_mlp.py 
+	alexnet_benchmark.py  
+	cifar10_train.py
+	cifar10_input.py
+	cifar10.py 
+
+measure_model.py 
+	测量在各种gpu利用率的环境下，ML模型的运行情况
