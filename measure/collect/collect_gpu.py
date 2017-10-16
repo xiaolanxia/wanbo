@@ -26,7 +26,8 @@ with open(gpu_save_filename, "a", newline="") as datacsv:
                 while i < len(info):
                     str1 = re.split(', |%, ', info[i].strip())
                     str2 = info2[i + 1].strip().split()
-                    timestamp = time.mktime(time.strptime(str1[0], '%Y-%m-%d %H:%M:%S'))
+                    #timestamp = time.mktime(time.strptime(str1[0], '%Y/%m/%d %H:%M:%S'))
+                    timestamp =  str1[0]
                     gpu_index = str1[1]
                     gpu_name = str1[2]
                     gpu_util = str1[3]
@@ -56,7 +57,8 @@ with open(gpu_save_filename, "a", newline="") as datacsv:
             while i < len(info):
                 str1 = re.split(', |%, ', info[i].strip())
                 str2 = info2[i + 1].strip().split()
-                timestamp = time.mktime(time.strptime(str1[0], '%Y-%m-%d %H:%M:%S'))
+                #timestamp = time.mktime(time.strptime(str1[0], '%Y/%m/%d %H:%M:%S'))
+                timestamp =  str1[0]
                 gpu_index = str1[1]
                 gpu_name = str1[2]
                 gpu_util = str1[3]
