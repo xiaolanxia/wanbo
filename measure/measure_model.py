@@ -76,10 +76,12 @@ def main(argv=None):
                                 '''
                                 if coe_array == [0, 0, 0, 0, 0]:
                                     #os.system("/home/wanbo/measure/program/ML_program/%s 0" % (model))
-                                    os.system("docker run -it -e DEV=10.244.48.45:0 -v /home/wanbo/measure:/home  --workdir /home --rm 10.244.48.135:5000/wanbo_measure:v2 /home/program/ML_program/%s 0" % (self.name))
+                                    os.system(
+                                        "docker run -it -e DEV=10.244.48.45:0 -v /home/wanbo/measure:/home  --workdir /home --rm 10.244.48.135:5000/wanbo_measure:v2 /home/program/ML_program/%s 0" % (model))
                                 else:
                                     #os.system("/home/wanbo/measure/program/ML_program/%s 1" % (model))
-                                    os.system("docker run -it -e DEV=10.244.48.45:0 -v /home/wanbo/measure:/home  --workdir /home --rm 10.244.48.135:5000/wanbo_measure:v2 /home/program/ML_program/%s 1" % (self.name))
+                                    os.system(
+                                        "docker run -it -e DEV=10.244.48.45:0 -v /home/wanbo/measure:/home  --workdir /home --rm 10.244.48.135:5000/wanbo_measure:v2 /home/program/ML_program/%s 1" % (model))
                                 turn += 1
         i += 1
 
