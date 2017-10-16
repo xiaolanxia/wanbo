@@ -111,7 +111,7 @@ def get_net_packets_recv():
     return psutil.net_io_counters(pernic=False).packets_recv
 
 # server_138 client135 client137
-filename = '/home/data/metadata_cpu/' + \
+filename = '/home/wanbo/measure/data/metadata_cpu/' + \
     time.strftime('%Y%m%d%H%M', time.localtime()) + '_cpu.csv'
 csvfile = open(filename, 'a')
 writer = csv.writer(csvfile, dialect='excel')
